@@ -18,6 +18,12 @@ String taxCode
 
 String contract
 
+
+String toString(){
+
+return fullName
+}
+
 static hasMany=[managers:Manager, shifts:Shift, teams:Team]
 
 static belongsTo=[Team]

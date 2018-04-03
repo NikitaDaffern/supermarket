@@ -2,6 +2,8 @@ package com.ndaffern
 
 class Shift {
 
+String shiftName
+
 String timeOfDay
 
 String dayOfWeek
@@ -9,6 +11,11 @@ String dayOfWeek
 int numberOfHours
 
 String startingTime
+
+String toString(){
+
+return shiftName
+}
 
 static hasMany=[employees:Employee, teams:Team, tasks:Task]
 

@@ -14,7 +14,12 @@ String timeRequired
 
 String description
 
-Boolean taskCompleted
+String taskCompleted
+
+String toString(){
+
+return taskName
+}
 
 static hasMany=[employees:Employee, teams:Team, shifts:Shift]
 

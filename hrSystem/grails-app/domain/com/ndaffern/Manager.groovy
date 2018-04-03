@@ -16,6 +16,7 @@ String office
 
 String department
 
+
 String toString(){
 
 return fullName
@@ -27,7 +28,7 @@ static hasMany=[employees:Employee]
 
 fullName blank:false, nullable:false
 
-userName blank:false, nullable:false, unique:true
+userName blank:false, nullable:false 
 
 password blank:false, nullable:false
 

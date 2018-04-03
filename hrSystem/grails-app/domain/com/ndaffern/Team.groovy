@@ -10,6 +10,11 @@ String sectionName
 
 String description
 
+String toString(){
+
+return teamName
+}
+
 static hasMany=[employees:Employee, shifts:Shift, tasks:Task, teamleaders:TeamLeader]
 
 static belongsTo=[TeamLeader]

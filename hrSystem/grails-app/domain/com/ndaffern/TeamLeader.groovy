@@ -20,6 +20,11 @@ String userName
 
 String password
 
+String toString(){
+
+return fullName
+}
+
 static hasMany=[employees:Employee, managers:Manager]
 
 static belongsTo=[Manager]
