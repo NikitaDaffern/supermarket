@@ -8,11 +8,20 @@ String userName
 
 String password
 
+TeamLeader teamleader
+
 String managerEmail
 
 String office
 
 String department
+
+String toString(){
+
+return fullName
+}
+
+static hasMany=[employees:Employee]
 
     static constraints = {
 

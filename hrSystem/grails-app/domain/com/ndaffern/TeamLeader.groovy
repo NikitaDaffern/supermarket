@@ -8,15 +8,21 @@ String department
 
 String employeeID
 
+Team team
+
 String sectionName
 
-Int officePhone
+int officePhone
 
 String leaderEmail
 
 String userName
 
 String password
+
+static hasMany=[employees:Employee, managers:Manager]
+
+static belongsTo=[Manager]
 
     static constraints = {
 

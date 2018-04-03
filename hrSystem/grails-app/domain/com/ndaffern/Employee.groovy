@@ -18,6 +18,10 @@ String taxCode
 
 String contract
 
+static hasMany=[managers:Manager, shifts:Shift, teams:Team]
+
+static belongsTo=[Team]
+
     static constraints = {
 
 fullName blank:false, nullable:false

@@ -4,7 +4,7 @@ class Task {
 
 String taskName
 
-Int numberOfPeople
+int numberOfPeople
 
 String sectionName
 
@@ -16,11 +16,15 @@ String description
 
 Boolean taskCompleted
 
+static hasMany=[employees:Employee, teams:Team, shifts:Shift]
+
+static belongsTo=[Shift]
+
     static constraints = {
 
 taskName blank:false, nullable:false
 
-numberofPeople blank:false, nullable:false
+numberOfPeople blank:false, nullable:false, min:0, max:50
 
 sectionName blank:false, nullable:false
 
