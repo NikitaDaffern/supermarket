@@ -18,8 +18,13 @@ String taskCompleted
 
 String toString(){
 
-return "$taskName,$numberOfPeople,$sectionName"
+return taskName
 }
+
+/*String toString(){
+
+return "$taskName,$numberOfPeople,$sectionName"
+}*/
 
 static hasMany=[employees:Employee, teams:Team, shifts:Shift]
 

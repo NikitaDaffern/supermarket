@@ -8,25 +8,27 @@ String userName
 
 String password
 
-TeamLeader teamleader
-
 String managerEmail
 
 String office
 
 String department
 
-
 String toString(){
+
+return fullName
+}
+
+/*String toString(){
 
 return "$fullName,$userName,$department"
 
-}
+}*/
 
 
 
 
-static hasMany=[employees:Employee]
+static hasMany=[employees:Employee, teamleaders:TeamLeader]
 
     static constraints = {
 

@@ -12,11 +12,16 @@ int numberOfHours
 
 String startingTime
 
-
 String toString(){
 
-return "$shiftName,$timeOfDay,$dayOfWeek"
+return shiftName
 }
+
+
+/*String toString(){
+
+return "$shiftName,$timeOfDay,$dayOfWeek"
+}*/
 
 static hasMany=[employees:Employee, teams:Team, tasks:Task]
 

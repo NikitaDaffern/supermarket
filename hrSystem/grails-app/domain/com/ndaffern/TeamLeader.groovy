@@ -8,8 +8,6 @@ String department
 
 String employeeID
 
-Team team
-
 String sectionName
 
 int officePhone
@@ -20,14 +18,17 @@ String userName
 
 String password
 
-
-
 String toString(){
 
-return "$fullName,$employeeID,$department"
+return fullName
 }
 
-static hasMany=[employees:Employee, managers:Manager]
+/*String toString(){
+
+return "$fullName,$employeeID,$department"
+}*/
+
+static hasMany=[employees:Employee, managers:Manager, teams:Team]
 
 static belongsTo=[Manager]
 

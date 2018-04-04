@@ -28,15 +28,13 @@ class BootStrap {
      teamName: 'Team Loading',
      numberOfEmployees: '15',
      sectionName: 'Home Entertainment',
-     description: 'lorem ipsum',
-     employee: employee2).save()
+     description: 'lorem ipsum').save()
 
      def team2=new Team(
      teamName: 'Team Stock Check',
      numberOfEmployees: '20',
      sectionName: 'Bakery',
-     description: 'lorem ipsum',
-     employee: employee1).save()
+     description: 'lorem ipsum').save()
 
      def teamleader1=new TeamLeader(
      fullName: 'Jane Doe',
@@ -47,8 +45,7 @@ class BootStrap {
      officePhone: '02316728',
      leaderEmail: 'JDoe@email.com',
      userName: 'jdoe',
-     password: 'Secret1982',
-     employee: employee1).save()
+     password: 'Secret1982').save()
 
      def teamleader2=new TeamLeader(
      fullName: 'Matthew Wilson',
@@ -59,8 +56,7 @@ class BootStrap {
      officePhone: '02456317',
      leaderEmail: 'MWilson@email.com',
      userName: 'mwilson',
-     password: 'Secret2387',
-     employee: employee2).save()
+     password: 'Secret2387').save()
 
      def manager1=new Manager(
      fullName: 'John Smithson',
@@ -88,8 +84,7 @@ class BootStrap {
      department: 'Grocery',
      timeRequired: '2 hours',
      description: 'lorem ipsum',
-     taskCompleted: 'no',
-     employee: employee1).save()
+     taskCompleted: 'no').save()
 
      def task2=new Task(
      taskName: 'Unloading Stock',
@@ -98,24 +93,21 @@ class BootStrap {
      department: 'Electronics',
      timeRequired: '1 hour',
      description: 'lorem ipsum',
-     taskCompleted: 'yes',
-     employee: employee2).save()
+     taskCompleted: 'yes').save()
 
      def shift1=new Shift(
      shiftName: 'Shift 1',
      timeOfDay: 'Morning',
      dayOfWeek: 'Tuesday',
      numberOfHours: '6',
-     startingTime: '12.00am',
-     employee: employee2).save()
+     startingTime: '12.00am').save()
 
      def shift2=new Shift(
      shiftName: 'Shift 2',
      timeOfDay: 'Afternoon',
      dayOfWeek: 'Monday',
      numberOfHours: '8',
-     startingTime: '12.00pm',
-     employee: employee1).save()
+     startingTime: '12.00pm').save()
 
      
 
