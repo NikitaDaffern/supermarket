@@ -11,8 +11,15 @@ class ShiftSpec extends Specification implements DomainUnitTest<Shift> {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void mergeData() {
+ 
+     when: "A Shift has shiftName, timeOfDay and dayOfWeek"
+    
+     def shift1=new Shift(shiftName: 'Shift 1', timeOfDay: 'Afternoon', dayOfWeek: 'Tuesday')
+
+     then: "the toString method will merge them."
+    
+     shift1.toString()=='Shift 1, Afternoon, Tuesday'      
+
     }
 }

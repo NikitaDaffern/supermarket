@@ -11,8 +11,15 @@ class TaskSpec extends Specification implements DomainUnitTest<Task> {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void mergeData() {
+  
+     when: "A Task has taskName, numberOfPeople and sectionName"
+
+     def task1=new Task(taskName: 'Replenishing', numberOfPeople: '5', sectionName: 'Bakery')
+
+     then: "the toString method will merge them."
+
+     task1.toString()=='Replenishing, 5, Bakery'       
+ 
     }
 }

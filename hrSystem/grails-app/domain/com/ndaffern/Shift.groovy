@@ -12,9 +12,10 @@ int numberOfHours
 
 String startingTime
 
+
 String toString(){
 
-return shiftName
+return "$shiftName,$timeOfDay,$dayOfWeek"
 }
 
 static hasMany=[employees:Employee, teams:Team, tasks:Task]
@@ -22,6 +23,8 @@ static hasMany=[employees:Employee, teams:Team, tasks:Task]
 static belongsTo=[Employee]
 
     static constraints = {
+
+shiftName blank:false, nullable:false
 
 timeOfDay blank:false, nullable:false
 

@@ -19,8 +19,12 @@ String department
 
 String toString(){
 
-return fullName
+return "$fullName,$userName,$department"
+
 }
+
+
+
 
 static hasMany=[employees:Employee]
 

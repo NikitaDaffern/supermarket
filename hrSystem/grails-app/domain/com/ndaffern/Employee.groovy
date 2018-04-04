@@ -28,6 +28,11 @@ static hasMany=[managers:Manager, shifts:Shift, teams:Team]
 
 static belongsTo=[Team]
 
+double calculateDailyWages(){
+
+8*hourlyRate
+
+}
     static constraints = {
 
 fullName blank:false, nullable:false

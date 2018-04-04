@@ -10,9 +10,10 @@ String sectionName
 
 String description
 
+
 String toString(){
 
-return teamName
+return "$teamName,$numberOfEmployees,$sectionName"
 }
 
 static hasMany=[employees:Employee, shifts:Shift, tasks:Task, teamleaders:TeamLeader]

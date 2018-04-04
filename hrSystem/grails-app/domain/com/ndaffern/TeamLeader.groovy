@@ -20,9 +20,11 @@ String userName
 
 String password
 
+
+
 String toString(){
 
-return fullName
+return "$fullName,$employeeID,$department"
 }
 
 static hasMany=[employees:Employee, managers:Manager]

@@ -11,8 +11,15 @@ class TeamLeaderSpec extends Specification implements DomainUnitTest<TeamLeader>
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void mergeData() {
+        
+    when: "A TeamLeader has fullName, employeeID and department"
+
+    def teamleader1=new TeamLeader(fullName: 'Jane Doe', employeeID: 'JD1827', department: 'Electronics')
+
+    then: "the toString method will merge them."
+
+    teamleader1.toString()=='Jane Doe, JD1827, Electronics'    
+
     }
 }
