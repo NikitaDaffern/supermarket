@@ -18,6 +18,8 @@
     <div class="row">
 
        <asset:image src="supermarket banner.jpg"/>
+       <h1>Supermarket HR System</h1>
+       <g:loginToggle/> 
 
     </div>
 
@@ -27,6 +29,7 @@
 
     <div id="spinner" class="spinner" style="display:none;">
         <g:message code="spinner.alt" default="Loading&hellip;"/>
+
     </div>
 
     <asset:javascript src="application.js"/>
